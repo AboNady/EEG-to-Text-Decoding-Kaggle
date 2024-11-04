@@ -326,10 +326,7 @@ if __name__ == '__main__':
         dataset_path_task2 = '/kaggle/input/dataset2/task2-NR-dataset_wRaw.pickle'
         with open(dataset_path_task2, 'rb') as handle:
             whole_dataset_dicts.append(pickle.load(handle))
-    if 'taskNRv2' in task_name:
-        dataset_path_taskNRv2 = '/kaggle/input/dataset3/task2-NR-2.0-dataset_wRaw.pickle'
-        with open(dataset_path_taskNRv2, 'rb') as handle:
-            whole_dataset_dicts.append(pickle.load(handle))
+
     print()
     with open(f'/kaggle/working/config/decoding_raw/{save_name}.json', 'w') as out_config:
         json.dump(args, out_config, indent=4)
