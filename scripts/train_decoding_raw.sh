@@ -7,6 +7,6 @@ python /kaggle/working/EEG-to-Text-Decoding/train_decoding_raw.py --model_name B
     --num_epoch_step2 1 \
     -lr1 0.5 \
     -lr2 0.5 \
-    -b 64\
+    -b 32\
     -s /kaggle/working/checkpoints/decoding_raw \
     -cuda cuda:0
